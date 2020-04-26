@@ -53,8 +53,6 @@ public class Array<E> {
         size++;
     }
 
-
-
     //在数组的最前面插入一个新元素e
     public void addFirst(E e){
         add(0,e);
@@ -65,6 +63,14 @@ public class Array<E> {
         if (index < 0 || index > size)
             throw new IllegalArgumentException("get failed, please check your index range");
         return data[index];
+    }
+
+    public E getLast() {
+        return get(size - 1);
+    }
+
+    public E getFirst() {
+        return  get(0);
     }
 
     //修改index索引位置的元素为e
