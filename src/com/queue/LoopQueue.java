@@ -1,4 +1,4 @@
-package com.com.quene;
+package com.queue;
 
 import org.omg.CORBA.Object;
 

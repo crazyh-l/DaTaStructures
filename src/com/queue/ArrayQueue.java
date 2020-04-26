@@ -1,4 +1,5 @@
-package com.com.quene;
+package com.queue;
+
 
 import com.array.Array;
 
@@ -52,14 +53,5 @@ public class ArrayQueue<E> implements Queue<E> {
         }
         res.append("]");
         return res.toString();
-    }
-
-    public static void main(String[] args) {
-        ArrayQueue<Integer> queue = new ArrayQueue<>();
-
-        for (int i = 0; i < 10; i++) {
-            queue.enqueue(i);
-            System.out.println(queue);
-        }
     }
 }

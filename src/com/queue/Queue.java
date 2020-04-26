@@ -1,7 +1,6 @@
-package com.com.quene;
+package com.queue;
 
 public interface Queue<E> {
-
 
     int getSize();
     boolean isEmpty();

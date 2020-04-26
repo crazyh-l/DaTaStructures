@@ -37,7 +37,9 @@ public class Solution {
             if (c == '(' || c == '[' || c == '{') {
                 stack.push(c);
             } else {
+
                 if (stack.isEmpty()) return false;
+
                 char topChar = stack.pop();
                 if (c == ')' && topChar != '(') {
                     return false;
