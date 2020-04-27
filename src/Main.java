@@ -1,3 +1,4 @@
+import com.queue.LoopQueue;
 import com.stack.ArrayStack;
 import com.stack.Statck;
 
@@ -25,13 +26,26 @@ public class Main {
         arr.removeFirst();
         System.out.println(arr);*/
 
-        ArrayStack<Integer> stack = new ArrayStack<>();
+       /* ArrayStack<Integer> stack = new ArrayStack<>();
 
         for (int i = 0; i < 5; i++) {
             stack.push(i);
             System.out.println(stack);
         }
         stack.pop();
-        System.out.println(stack);
+        System.out.println(stack);*/
+
+        LoopQueue<Integer> queue = new LoopQueue<>();
+
+        for (int i = 0; i < 10; i++) {
+            queue.enqueue(i);
+            System.out.println(queue);
+
+            if (i % 3 == 2) {
+                queue.dequeue();
+                System.out.println(queue);
+            }
+        }
+
     }
 }
