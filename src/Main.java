@@ -1,3 +1,4 @@
+import com.linkedlist.LinkedList;
 import com.queue.LoopQueue;
 import com.stack.ArrayStack;
 import com.stack.Statck;
@@ -35,7 +36,7 @@ public class Main {
         stack.pop();
         System.out.println(stack);*/
 
-        LoopQueue<Integer> queue = new LoopQueue<>();
+       /* LoopQueue<Integer> queue = new LoopQueue<>();
 
         for (int i = 0; i < 10; i++) {
             queue.enqueue(i);
@@ -45,7 +46,27 @@ public class Main {
                 queue.dequeue();
                 System.out.println(queue);
             }
+        }*/
+
+        LinkedList<Integer> linkedList = new LinkedList<>();
+
+        for (int i = 0; i < 5 ; i++) {
+            linkedList.addFirst(i);
+            System.out.println(linkedList);
         }
+
+        linkedList.add(2,666);
+        System.out.println(linkedList);
+
+        linkedList.remove(2);
+        System.out.println(linkedList);
+
+        linkedList.removeFirst();
+        System.out.println(linkedList);
+
+        linkedList.removeLast();
+        System.out.println(linkedList);
+
 
     }
 }
